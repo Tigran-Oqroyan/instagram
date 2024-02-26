@@ -1,0 +1,154 @@
+.signInDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 20px;
+  .instagramLogo{
+    margin: 50px;
+    width: 250px;
+    height: 100px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .facebookDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    height: 50px;
+    background-color: #397bff;    ;
+    border-radius: 10px;
+    padding: 0 20px;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover{
+      background-color: #5f94ff;
+    }
+    margin-bottom: 10px;
+    .facebookImage{           
+      width: 30px;
+      height: 30px;
+      background-image: url('../public/images/facebook.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      
+    }
+  }
+  .orBlock{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .orOne,
+    .orTwo{
+      height: 0.01px;
+      width: 100px;
+      background-color: rgb(211, 211, 211);
+      border: 1px solid rgb(214, 214, 214);
+    }
+    .or{
+      font-weight: 500;
+      color:gray;
+    }
+  }
+
+  .loginInput {
+    border: 1px solid rgb(192, 192, 192);
+    outline: none;
+    padding: 10px;
+    width: 70%;
+    height: 35px;
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  
+ .passwordDiv{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .showHideDiv{
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(192, 192, 192);
+      border-left: none;
+      width: 60px;
+      height: 57px;
+      font-weight: 500;
+      font-size: 19px;
+      &:hover{
+        color: gray;
+      }
+    }
+    .passwordInput{
+      border: 1px solid rgb(192, 192, 192);
+      border-right: none;
+      outline: none;
+      padding: 10px;
+      width: 75%;
+      height: 35px;
+      font-size: 17px;
+    }
+ }
+  
+  
+  .forgotPasswordLink{
+    width: 75%;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: right ;
+    color: #54a6ff;
+  }
+
+  .logInButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 45px;
+    background-color: #54a6ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size:18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    &:hover{
+      background-color: #2990ff;
+    }
+  }
+
+  .footer{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+      margin: 20px 0;
+      text-decoration: none;
+      font-size: 19px;
+      text-align: right ;
+      color: rgb(92, 92, 92);
+    }
+    .signInLink{
+      margin: 20px 0;
+      text-decoration: none;
+      font-size: 19px;
+      text-align: right ;
+      color: #3a99ff;
+      font-weight: bold;
+    }
+  }
+}
