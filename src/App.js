@@ -61,7 +61,7 @@ function App() {
       href="#">Forgot password?
     </a>
     <a
-      href={login && password ? "https://www.instagram.com/" : "#"}
+      href={login && password ? "#" : "#"}
       className={styles.logInButton}
       onClick={()=>{
         let obj ={}
